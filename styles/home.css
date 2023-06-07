@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+}
+.content {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: white; */
+  position: absolute;
+  z-index: 5;
+}
+.video {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+button {
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    scale: 1.1;
+  }
+}
+.title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgba(241, 232, 232, 0.894);
+  margin-bottom: 15px;
+}
+/* countdown */
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.launch-time {
+  display: flex;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  opacity: 0.7;
+}
+.launch-time div {
+  padding: 10px 30px;
+}
+
+.launch-time div p {
+  font-size: 60px;
+  margin: 0px 5px;
+}
+.launch-time p {
+  font-weight: bold;
+  color: white;
+}
+/* end countdown */
